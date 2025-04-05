@@ -127,14 +127,14 @@ with col1:
 
 # Columna derecha: Información del estudiante
 with col2:
-    st.markdown('<h3 style="color: #0066cc; margin-top: 0px;">Juan Pérez González</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #0066cc; margin-top: 0px;">Melissa Suarez Pineda</h3>', unsafe_allow_html=True)
     st.markdown('<p style="margin-top: 10px;">Programa: <span style="color: #0066cc; font-weight: bold;">Desarrollo de Software</span></p>', unsafe_allow_html=True)
     st.markdown('<p>Semestre: <span style="color: #0066cc; font-weight: bold;">2025-1</span></p>', unsafe_allow_html=True)
     st.markdown('<p>Repositorio: <a href="https://github.com/username/proyecto-ntp" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">GitHub</a></p>', unsafe_allow_html=True)
    
 
 
-# Pie de página
+# Pie de páginastreamlit run Inicio.py
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #666; font-size: 0.8rem;">

@@ -1,4 +1,7 @@
+import pandas as pd
 import streamlit as st
+
+
 
 # Configuración de la página
 st.set_page_config(   
@@ -27,3 +30,25 @@ st.markdown("""
 
 st.header("Solución")
 
+df = pd.read_csv('static\datasets\estudiantes_colombia.csv')
+
+st.dataframe (df)
+
+st.subheader("Primero 5 filas de dataset")
+st.write(df.head())
+
+st.subheader("Ultimas 5 filas de dataset")
+st.write(df.tail())
+
+
+
+
+st.subheader("Descripción Estadística del Dataset")
+st.write(df.describe())
+
+st.subheader("Columnas especificas NOMBRE, EDAD, PROMEDIO")
+df2=df[['nombre', 'edad', 'promedio']]
+st.write((df2))
+
+st.subheader("Filtrar estudiantes con promedio mayor a un valor definido por el usuario ")
+df[df['promedio']>4.0]
