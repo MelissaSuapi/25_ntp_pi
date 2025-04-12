@@ -40,9 +40,6 @@ st.write(df.head())
 st.subheader("Ultimas 5 filas de dataset")
 st.write(df.tail())
 
-
-
-
 st.subheader("Descripción Estadística del Dataset")
 st.write(df.describe())
 
