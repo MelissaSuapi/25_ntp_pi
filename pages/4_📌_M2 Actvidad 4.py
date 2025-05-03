@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Configuración de la página
 st.set_page_config(   
@@ -26,4 +27,21 @@ st.markdown("""
 """)
 
 st.header("Solución")
+
+
+# Crear un DataFrame 
+data = {
+    'Nombre': ['Melissa', 'Lorenzo', 'Benjamin', 'Pacho', 'Isabela'],
+    'Edad': [36, 11, 1, 20, 8],
+    'Ciudad': ['Bello', 'Medellin', 'Itagui', 'Caldas', 'Medellin'],
+    'Deporte': ['Natacion', 'Baloncesto', 'Futbol', 'Natacion', 'Baloncesto']
+}
+
+df = pd.DataFrame(data, index = ['a', 'b', 'c', 'd', 'e'])
+st.write(df.head())
+
+
+
+
+
 
